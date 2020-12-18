@@ -1,0 +1,74 @@
+# Mageplaza
+#
+# NOTICE OF LICENSE
+#
+# This source file is subject to the Mageplaza.com license that is
+# available through the world-wide-web at this URL:
+# https://www.mageplaza.com/LICENSE.txt
+#
+# DISCLAIMER
+#
+# Do not edit or add to this file if you wish to upgrade this extension to newer
+# version in the future.
+#
+# @category    Mageplaza
+# @package     Mageplaza_FreeShippingBarGraphQl
+# @copyright   Copyright (c) Mageplaza (https://www.mageplaza.com/)
+# @license     https://www.mageplaza.com/LICENSE.txt
+
+type Query {
+    mpGuestFreeShippingBar: [mpFreeShippingBarOutput] @resolver(class: "\\Mageplaza\\FreeShippingBarGraphQl\\Model\\Resolver\\GuestShippingBar") @doc(description: "Query to get guest free shipping bar.")
+    mpCustomerFreeShippingBar: [mpFreeShippingBarOutput] @resolver(class: "\\Mageplaza\\FreeShippingBarGraphQl\\Model\\Resolver\\CustomerShippingBar") @doc(description: "Query to get customer free shipping bar.")
+    mpFreeShippingBarConfig: priceFormat @resolver(class: "\\Mageplaza\\FreeShippingBarGraphQl\\Model\\Resolver\\Config") @doc(description: "Query to get local price format free shipping bar.")
+}
+
+type mpFreeShippingBarOutput {
+    rule_id: Int @doc(description: "Rule ID"),
+    name: String @doc(description: "Name"),
+    status: Boolean @doc(description: "Status"),
+    priority: Int @doc(description: "Priority"),
+    created_at: String @doc(description: "Created At"),
+    from_date: String @doc(description: "From Date"),
+    to_date: String @doc(description: "To Date"),
+    updated_at: String @doc(description: "Updated At"),
+    store_id: String @doc(description: "Store ID"),
+    customer_group_id: String @doc(description: "Customer Group ID"),
+    goal: Int @doc(description: "Goal"),
+    first_message: String @doc(description: "First Message"),
+    below_goal_message: String @doc(description: "Below Goal Message"),
+    achieve_message: String @doc(description: "Achieve Message"),
+    click_able: Boolean @doc(description: "Click Able"),
+    url_shippingbar: String @doc(description: "URL Shipping Bar"),
+    open_new_page: Boolean @doc(description: "Open New Page"),
+    template: String @doc(description: "Template"),
+    bar_background: String @doc(description: "Bar Background"),
+    bar_opacity: Int @doc(description: "Bar Opacity"),
+    bar_text_color: String @doc(description: "Bar Text Color"),
+    bar_link_color: String @doc(description: "Bar Link Color"),
+    goal_text_color: String @doc(description: "Goal Text Color"),
+    image: String @doc(description: "Image"),
+    string_font_connect: String @doc(description: "String Font Connect"),
+    font_text: String @doc(description: "Font Text"),
+    font_size: Int @doc(description: "Font Size"),
+    position: String @doc(description: "Position"),
+    allowshow: String @doc(description: "Allow Show"),
+    include_pages: String @doc(description: "Include Pages"),
+    include_pages_url_contain: String @doc(description: "Include Pages Url Contain"),
+    exclude_pages: String @doc(description: "Exclude Pages"),
+    exclude_pages_url_contain: String @doc(description: "Exclude Pages Url Contain"),
+    image_background_url: String @doc(description: "Image Background URL")
+}
+
+type priceFormat {
+    price_format: priceData @doc(description: "Price Data")
+}
+
+type priceData {
+    pattern: String @doc(description: "Pattern")
+    precision: Int @doc(description: "Precision")
+    required_precision: String @doc(description: "Required Precision")
+    decimal_symbol: String @doc(description: "Decimal Symbol")
+    group_symbol: String @doc(description: "Group Symbol")
+    group_length: String @doc(description: "Group Length")
+    integer_required: String @doc(description: "Integer Required")
+}
