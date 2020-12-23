@@ -1,6 +1,6 @@
-# Magento 2 Free Shipping Bar GraphQL/PWA
+# Magento Free Shipping Bar GraphQL
 
-Magento 2 Free Shipping Bar GraphQL is a part of Free Shipping Bar extension that add GraphQL features, this support for PWA Studio.
+Free Shipping Bar GraphQL is a part of Free Shipping Bar extension that add GraphQL features, this support for PWA Studio.
 ## 1. How to install
 
 Run the following command in Magento 2 root folder:
@@ -12,7 +12,7 @@ php bin/magento setup:static-content:deploy
 ```
 
 **Note:**
-Magento 2 Free Shipping Bar GraphQL requires installing [Mageplaza Free Shipping Bar](https://www.mageplaza.com/magento-2-free-shipping-bar/) in your Magento installation.
+Free Shipping Bar GraphQL requires installing [Mageplaza Free Shipping Bar](https://www.mageplaza.com/magento-2-free-shipping-bar/) in your Magento installation.
 
 ## 2. How to use
 
