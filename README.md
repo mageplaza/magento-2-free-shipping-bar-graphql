@@ -36,8 +36,8 @@ To perform GraphQL queries in Magento, please do the following requirements:
 
 ## 3. Devdocs
 
-- [Free Shipping Bar API & examples](https://documenter.getpostman.com/view/10589000/TVCY7CNb#887674fb-7cdd-46d5-87b3-f5aed3bd67ce)
-- [Free Shipping Bar GraphQL & examples](https://documenter.getpostman.com/view/10589000/TVsuDo2Z)
+- [Magento 2 Free Shipping Bar API & examples](https://documenter.getpostman.com/view/10589000/TVCY7CNb#887674fb-7cdd-46d5-87b3-f5aed3bd67ce)
+- [Magento 2 Free Shipping Bar GraphQL & examples](https://documenter.getpostman.com/view/10589000/TVsuDo2Z)
 
 
 ## 4. Contribute to this module
